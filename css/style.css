@@ -1,0 +1,113 @@
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial;
+}
+header, header ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    box-sizing: border-box;
+}
+header{
+    background-color: #1b5589;
+    justify-content: space-between;
+}
+ul{
+    width: 30%;
+}
+header ul li img{
+    width: 32px;
+}
+header ul li{
+    margin-left: 10px;
+    width: 30%;
+    flex-basis: content;
+}
+header ul li a{
+    color: gray;
+    text-decoration: none;
+    width: 100%;
+}
+header ul li:nth-child(4) a{
+    color: white;
+}
+header > img{
+    margin: 5px 50px 5px 0;
+}
+.title{
+    width: 92%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+.title p{
+    font-size: 36px;
+    text-align: center;
+}
+.title ul{
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    background-color: #cce5ff;
+    margin: 0;
+    padding: 0;
+    padding: 20px 0;
+    border-radius: 8px;
+    color: #265e9b;
+    text-align: center;
+}
+.title li:nth-child(1){
+    flex-basis: 20%;
+}
+.title li:nth-child(2),
+.title li:nth-child(3){
+    flex-basis: 40%;
+}
+.form{
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+}
+.form div:nth-child(1){
+    width: 20%;
+}
+.form div:nth-child(1) img{
+    max-width: 85%;
+}
+.form div:nth-child(2),
+.form div:nth-child(3){
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+.form div:nth-child(2) form,
+.form div:nth-child(3) form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form input, button{
+    width: 90%;
+    margin-top: 10px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+button{
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+button:active {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+  }
