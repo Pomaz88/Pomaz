@@ -12,9 +12,9 @@
     <header>
         <ul>
             <li><a href="#"><img src="img/free-icon-skills-4511896.png" alt="#"></a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Homework</a></li>
-            <li><a href="">Settings</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Homework</a></li>
+            <li><a href="#">Settings</a></li>
         </ul>
         <img src="img/av_64.png" alt="#">
     </header>
@@ -35,20 +35,20 @@
         </div>
         <div>
             <form action="#">
-                <input type="text" placeholder="First name">
-                <input type="text" placeholder="Last name">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Phone number">
-                <input type="text" placeholder="Address">
-                <input type="text" placeholder="FB link">
+                <input type="text" placeholder="First name" pattern="[A-Za-z]" maxlength="30" required>
+                <input type="text" placeholder="Last name" pattern="[A-Za-z]"maxlength="30" required>
+                <input type="email" placeholder="Email" maxlength="40" required>
+                <input type="text" placeholder="Phone number" maxlength="13" required>
+                <input type="text" placeholder="Address" maxlength="30" required>
+                <input type="text" placeholder="FB link" maxlength="30" required>
                 <button type="submit">Save change</button>
             </form>
         </div>
         <div>
             <form action="#">
-                <input type="password" placeholder="Old password">
-                <input type="password" placeholder="New password">
-                <input type="password" placeholder="Repeat password">
+                <input type="password" placeholder="Old password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*" maxlength="16" required>
+                <input type="password" placeholder="New password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*" maxlength="16" required>
+                <input type="password" placeholder="Repeat password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*" maxlength="16" required>
                 <button type="submit">Change password</button>
             </form>
         </div>
